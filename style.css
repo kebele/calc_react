@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+  box-sizing : border-box;
+  font-family : 'Acme', sans-serif;
+}
+
+body {
+  margin : 0;
+  padding : 0;
+  background-color : #6ab04c;  
+  min-height : 100vh;
+  display : flex;
+  align-items : center;
+  justify-content : center
+}
+
+.calculator {
+  background-color : #30336b;
+  border-radius : 15px;
+  display : flex;
+  flex-wrap : wrap;
+/*   align-items : center;
+  justify-content : center; */
+  padding : 5px;
+  width : 250px;
+  height : 400px;
+}
+
+.display {
+  background-color : #f6e58d;
+  border-radius : 10px;
+  position : relative;
+  padding : 5px 5px;
+  margin-top : 5px;
+  font-size : 45px;
+  font-family: "Acme", sans-serif;
+  text-align : right;
+  height : 60px;
+  width : 100%
+}
+
+/* .display small {
+  position : absolute;
+  color : orangered;
+  font-size : 14px;
+  right : 5px;
+  top : 5px;
+} */
+
+.nums-container {
+  width : 75%;
+}
+
+.ops-container {
+  width :25%;
+}
+
+button {
+  border : none;
+  border-radius : 25%;
+  cursor : pointer;
+  font-size : 35px;
+  margin : 5px;
+  height : 50px;
+  width : 50px
+}
+button.orange {
+  background-color : orange;
+  color : black;
+}
+
+button.dark-grey {
+  background-color : darkgray;
+} 
+
+button.light-grey {
+  background-color : lightgray;
+}
+
+button:hover {
+  opacity : 0.9;
+  color: blue;
+  font-weight: 800;
+  background-color: crimson;
+}
+
+button:active {
+  transform : scale(0.9);
+}
+
+button:focus {
+  outline : none
+}
+
+button.big-v {
+/*   border-radius : 10px; */
+  height : 110px;
+}
+
+button.big-h {
+  width : 100px;
+}
+
+/* button.ac {
+  margin-right : 50%;
+} */
+button.back {
+  background-color : #f1c40f;
+  font-size : 20px
+}
+button.back:hover {
+  background-color: #3498db;
+}
